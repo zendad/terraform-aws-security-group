@@ -29,7 +29,6 @@ resource "aws_security_group" "default" {
   name        = module.labels.id
   vpc_id      = var.vpc_id
   description = var.description
-  tags        = module.labels.tags
   lifecycle {
     create_before_destroy = true
   }
